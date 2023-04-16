@@ -35,7 +35,7 @@ func Load(config string, release bool) (err error) {
 	if release {
 		level = zap.InfoLevel
 	}
-	settings.Logger = wrap.NewLogger("logs/chatgot-proxy.log", level, 256, nil)
+	settings.Logger = wrap.NewLogger("logs/fullstack-go-react.log", level, 256, nil)
 	settings.SetupLoggers()
 
 	//

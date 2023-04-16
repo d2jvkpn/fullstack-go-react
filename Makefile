@@ -1,7 +1,7 @@
 gitBranch = $(shell git rev-parse --abbrev-ref HEAD)
 gitTime = $(shell date +'%FT%T%:z')
 
-build:
+build-local:
 	echo ">>> git branch: ${gitBranch}, git time: ${gitTime}"
 	npm run build
 	mkdir -p target
